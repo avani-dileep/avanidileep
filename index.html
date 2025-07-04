@@ -517,21 +517,18 @@ currently studying in Marian College Kuttikkanam.
    <!-- Lightbox CSS -->
 <!-- Lightbox CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-<!-- Swiper CSS -->
-<link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
 
 <!-- CERTIFICATIONS SECTION -->
-<section id="certi" class="testimonials section-bg">
+<section id="certi" class="testimonials section-bg py-5">
   <div class="container" data-aos="fade-up">
-    <div class="section-title">
-      <h2>Certifications</h2>
-      <div class="section-title" style="text-align: left;">
-        <p><b>ACADEMICS</b></p>
-      </div>
+    <div class="section-title text-center mb-3">
+      <h2 class="mb-2">Certifications</h2>
+      <p><strong>ACADEMICS</strong></p>
     </div>
 
     <div class="swiper certi-swiper">
       <div class="swiper-wrapper">
+
         <!-- Certificate Slide -->
         <div class="swiper-slide">
           <div class="certi-card">
@@ -586,6 +583,7 @@ currently studying in Marian College Kuttikkanam.
             <h4>Shape AI</h4>
           </div>
         </div>
+
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -593,13 +591,15 @@ currently studying in Marian College Kuttikkanam.
 </section>
 
 <!-- ACTIVITIES SECTION -->
-<section class="testimonials section-bg">
+<section class="testimonials section-bg py-5">
   <div class="container" data-aos="fade-up">
-    <div class="section-title" style="text-align: left;">
-      <p><b>ACTIVITIES</b></p>
+    <div class="section-title text-center mb-3">
+      <p><strong>ACTIVITIES</strong></p>
     </div>
+
     <div class="swiper activity-swiper">
       <div class="swiper-wrapper">
+
         <div class="swiper-slide">
           <div class="certi-card">
             <a href="img/certi/nsctc.jpg" data-lightbox="certi" data-title="NATIONAL STUDENTS CONFERENCE">
@@ -635,6 +635,7 @@ currently studying in Marian College Kuttikkanam.
             <h4>PG CODING</h4>
           </div>
         </div>
+
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -643,39 +644,52 @@ currently studying in Marian College Kuttikkanam.
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 <!-- Lightbox JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-<!-- Initialize Swipers -->
+<!-- Swiper Init Script -->
 <script>
   new Swiper('.certi-swiper', {
-    slidesPerView: 1.2,
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
     breakpoints: {
-      768: { slidesPerView: 3 },
-      992: { slidesPerView: 4 },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
     }
   });
 
   new Swiper('.activity-swiper', {
-    slidesPerView: 1.2,
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
     breakpoints: {
-      768: { slidesPerView: 3 },
-      992: { slidesPerView: 4 },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
     }
   });
 </script>
 
-<!-- Custom CSS -->
+<!-- Custom Styling -->
 <style>
   .certi-card {
     background: #fff;
@@ -683,24 +697,58 @@ currently studying in Marian College Kuttikkanam.
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
-    transition: transform 0.3s ease;
     height: 100%;
+    transition: transform 0.3s ease;
   }
+
+  .certi-card:hover {
+    transform: scale(1.03);
+  }
+
   .certi-card img {
     width: 100%;
     height: 250px;
     object-fit: contain;
     border-radius: 12px;
   }
+
   .certi-card h4 {
     margin-top: 12px;
     font-size: 16px;
     font-weight: 600;
+    color: #333;
   }
+
   .swiper {
     padding-bottom: 30px;
   }
+
+  .section-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .section-title p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 576px) {
+    .certi-card img {
+      height: 220px;
+    }
+
+    .certi-card h4 {
+      font-size: 14px;
+    }
+
+    .section-title h2 {
+      font-size: 20px;
+    }
+  }
 </style>
+
 <hr>
  <section id="vol" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
