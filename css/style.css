@@ -115,6 +115,18 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+/* Add to your stylesheet */
+.services .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.services .icon-box {
+  min-width: 300px;
+  margin-right: 20px;
+}
+
 #header {
   transition: all 0.5s;
   z-index: 997;
