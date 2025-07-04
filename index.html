@@ -60,7 +60,7 @@
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>I'm <br>Avani Dileep</h1>
-          <h2>Student  |  Web Developer </h2>
+          <h2>MCA Graduate |  Passionate about Technology </h2>
           
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
@@ -245,230 +245,189 @@
 <hr>
 <!-- ======= Academic Projects Section ======= -->
 <section id="project" class="services section-bg">
-  <div class="container" data-aos="fade-up" style="position: relative;">
-    <div class="section-title">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center">
       <h2>Academic Projects</h2>
-      <p>Projects done in my academics</p>
+      <p>Projects done during my academics</p>
+      <p class="swipe-hint d-md-none">← Swipe to view more projects →</p>
     </div>
 
-    <!-- Scroll Buttons with Boxicons -->
-    <span class="swiper-icon left-arrow" onclick="scrollProjectsLeft()">
-      <i class='bx bx-chevron-left'></i>
-    </span>
-    <span class="swiper-icon right-arrow" onclick="scrollProjectsRight()">
-      <i class='bx bx-chevron-right'></i>
-    </span>
+    <!-- Scrollable Project Container -->
+    <div class="projects-scroll-wrapper position-relative">
+      <div id="projects-container" class="d-flex flex-row overflow-auto gap-4 pb-4">
 
-    <!-- Horizontal scroll container -->
-    <div id="projects-container" class="d-flex flex-row overflow-auto gap-4 pb-3"
-      style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
-
-      <!-- Project 1 -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch"
-        style="min-width: 300px; scroll-snap-align: start;" data-aos="zoom-in" data-aos-delay="100">
-        <div class="icon-box iconbox-blue">
-          <div class="icon">
-            <i class="bx bx-slideshow"></i>
-          </div>
-          <h4><a href="#">Web Development Project</a></h4>
-          <p><strong>Title:</strong> Garbage Recycler <br>
-            <strong>Front-End:</strong> HTML, CSS, JS <br>
-            <strong>Back-End:</strong> Python, Django, PostgreSQL <br><br>
-            Manages non-biodegradable apartment waste, enabling pickups, rewarding residents with SuperCoins, and promoting recycling through an integrated e-commerce system.
+        <!-- Project 1 -->
+        <div class="project-card iconbox-blue">
+          <div class="icon"><i class="bx bx-slideshow"></i></div>
+          <h4>Garbage Recycler</h4>
+          <p><strong>Front-End:</strong> HTML, CSS, JS<br>
+            <strong>Back-End:</strong> Python, Django, PostgreSQL</p>
+          <p>Manages apartment waste, enables pickups, rewards residents with SuperCoins via an integrated e-commerce model.</p>
+          <p><strong>Repository:</strong>
+            <a href="https://github.com/avani-dileep/Greenovate" target="_blank">https://github.com/avani-dileep/Greenovate</a>
           </p>
-          <div class="testimonial-item"><img src="img/greenovate.png" class="img-fluid mt-3" alt=""></div>
+          <img src="img/greenovate.png" class="img-fluid mt-3 project-image" alt="Garbage Recycler">
         </div>
-      </div>
 
-      <!-- Project 2 -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch"
-        style="min-width: 300px; scroll-snap-align: start;" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon-box iconbox-orange">
-          <div class="icon">
-            <i class="bx bx-slideshow"></i>
-          </div>
-          <h4><a href="#">Web Development Project</a></h4>
-          <p><strong>Title:</strong> Dessert Cafe Management System <br>
-            <strong>Front-End:</strong> HTML, CSS, JS <br>
-            <strong>Back-End:</strong> MySQL, PHP <br><br>
-            A system that allows customers to place customized orders directly within the restaurant, reducing wait times and improving order accuracy.
+        <!-- Project 2 -->
+        <div class="project-card iconbox-orange">
+          <div class="icon"><i class="bx bx-slideshow"></i></div>
+          <h4>Dessert Cafe Management</h4>
+          <p><strong>Front-End:</strong> HTML, CSS, JS<br>
+            <strong>Back-End:</strong> PHP, MySQL</p>
+          <p>Customers can place customized orders from their tables, improving efficiency and accuracy.</p>
+          <p><strong>Repository:</strong>
+            <a href="https://github.com/avani-dileep/Dessertcafe" target="_blank">https://github.com/avani-dileep/Dessertcafe</a>
           </p>
-          <div class="testimonial-item"><img src="img/dessert.png" class="img-fluid mt-3" alt=""></div>
+          <img src="img/dessert.png" class="img-fluid mt-3 project-image" alt="Dessert Cafe">
         </div>
-      </div>
 
-      <!-- Project 3 -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch"
-        style="min-width: 300px; scroll-snap-align: start;" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon-box iconbox-orange">
-          <div class="icon">
-            <i class="bx bx-slideshow"></i>
-          </div>
-          <h4><a href="#">Web Development Project</a></h4>
-          <p><strong>Title:</strong> Arts and Craft Management System <br>
-            <strong>Front-End:</strong> HTML, CSS, JS <br>
-            <strong>Back-End:</strong> MySQL, PHP <br><br>
-            The Art and Craft Management System enables users to purchase and sell handmade products through an organized platform.
-          </p>
-          <div class="testimonial-item"><img src="img/art.png" class="img-fluid mt-3" alt=""></div>
-          <div class="testimonial-item"><img src="img/art2.png" class="img-fluid mt-2" alt=""></div>
+        <!-- Project 3 -->
+        <div class="project-card iconbox-orange">
+          <div class="icon"><i class="bx bx-slideshow"></i></div>
+          <h4>Arts & Craft System</h4>
+          <p><strong>Front-End:</strong> HTML, CSS, JS<br>
+            <strong>Back-End:</strong> PHP, MySQL</p>
+          <p>Buy/sell handmade items through an organized platform that promotes artists and artisans.</p>
+          <img src="img/art.png" class="img-fluid mt-3 project-image" alt="Art 1">
+          <img src="img/art2.png" class="img-fluid mt-2 project-image" alt="Art 2">
         </div>
-      </div>
 
-      <!-- Project 4 -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch"
-        style="min-width: 300px; scroll-snap-align: start;" data-aos="zoom-in" data-aos-delay="200">
-        <div class="icon-box iconbox-orange">
-          <div class="icon">
-            <i class="bx bx-slideshow"></i>
-          </div>
-          <h4><a href="#">Web Development Project</a></h4>
-          <p><strong>Title:</strong> Cooking Recipe <br>
-            <strong>Front-End:</strong> HTML, CSS, JS <br><br>
-            It is the ultimate source for diverse, easy-to-follow recipes. Enhance your culinary skills with our tips, meal plans, and step-by-step guides for every occasion.
-          </p>
-          <div class="testimonial-item"><img src="img/cook.png" class="img-fluid mt-3" alt=""></div>
+        <!-- Project 4 -->
+        <div class="project-card iconbox-orange">
+          <div class="icon"><i class="bx bx-slideshow"></i></div>
+          <h4>Cooking Recipe</h4>
+          <p><strong>Front-End:</strong> HTML, CSS, JS</p>
+          <p>Diverse recipes, tips, meal plans & step-by-step guides to enhance your cooking experience.</p>
+          <img src="img/cook.png" class="img-fluid mt-3 project-image" alt="Cooking">
         </div>
-      </div>
 
-      <!-- Project 5 -->
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch"
-        style="min-width: 300px; scroll-snap-align: start;" data-aos="zoom-in" data-aos-delay="300">
-        <div class="icon-box iconbox-pink">
-          <div class="icon">
-            <i class="bx bx-slideshow"></i>
-          </div>
-          <h4><a href="#">RPA Project</a></h4>
-          <p><strong>Title:</strong> Resume Builder <br>
-            <strong>Tool:</strong> UI Path <br>
-            <br>
-            An automation project using UI Path to generate resumes for students at Marian College Kuttikkanam under ICT Academy of Kerala.
-          </p>
-          <div class="testimonial-item"><img src="img/rpa.png" class="img-fluid mt-3" alt=""></div>
+        <!-- Project 5 -->
+        <div class="project-card iconbox-pink">
+          <div class="icon"><i class="bx bx-slideshow"></i></div>
+          <h4>Resume Builder (RPA)</h4>
+          <p><strong>Tool:</strong> UI Path</p>
+          <p>Automation tool built under ICT Academy for generating student resumes at Marian College.</p>
+          <img src="img/rpa.png" class="img-fluid mt-3 project-image" alt="RPA">
         </div>
+
       </div>
-
-    </div> <!-- End scroll container -->
-
+    </div>
   </div>
 </section>
 
-<!-- Boxicons CSS -->
+<!-- Boxicons -->
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-<!-- Custom Styles -->
+<!-- Styles -->
 <style>
-  .swiper-icon {
-    font-size: 36px;
-    width: 50px;
-    height: 50px;
-    color: #007bff;
-    background-color: #ffffffee;
-    border: 2px solid #007bff;
-    border-radius: 50%;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    transition: all 0.3s ease;
+  #projects-container {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-padding-left: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
-  .swiper-icon:hover {
-    background-color: #007bff;
-    color: #fff;
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.4);
-  }
-
-  .left-arrow {
-    left: -20px;
-  }
-
-  .right-arrow {
-    right: -20px;
-  }
-
-  /* Hide scrollbars */
   #projects-container::-webkit-scrollbar {
     display: none;
   }
 
-  #projects-container {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  .project-card {
+    scroll-snap-align: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    transition: transform 0.3s;
   }
 
-  /* Justify text in project cards */
-  .icon-box p {
+  .iconbox-blue {
+    border-top: 4px solid #007bff;
+  }
+
+  .iconbox-orange {
+    border-top: 4px solid #ff6600;
+  }
+
+  .iconbox-pink {
+    border-top: 4px solid #e83e8c;
+  }
+
+  .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+
+  .project-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .project-card p {
+    font-size: 14px;
     text-align: justify;
+    margin-bottom: 5px;
   }
 
-  /* Mobile View Fix */
-  @media (max-width: 768px) {
-    #projects-container {
-      flex-wrap: nowrap; /* Keeps items in a single row */
-      justify-content: flex-start;
-      overflow-x: auto; /* Enables horizontal scrolling */
-      padding-bottom: 20px;
-    }
+  .project-card a {
+    color: #007bff;
+    word-break: break-word;
+    text-decoration: underline;
+  }
 
-    .icon-box {
-      min-width: 280px; /* Reduces card size */
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+
+  .swipe-hint {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+    animation: pulseHint 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulseHint {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+  }
+
+  /* Desktop View */
+  @media (min-width: 769px) {
+    .project-card {
+      width: 300px;
       margin-right: 15px;
-      padding: 15px;
-      box-sizing: border-box;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      border: 1px solid #ddd;
+    }
+  }
+
+  /* Mobile View: One card per screen and full image */
+  @media (max-width: 768px) {
+    .project-card {
+      width: 100%;
+      max-width: 100%;
+      flex: 0 0 100%;
     }
 
-    .swiper-icon {
-      top: 80%;
-      font-size: 28px;
-    }
-
-    .col-lg-4, .col-md-6 {
-      flex: 0 0 auto; /* Keeps each item fixed size */
-      max-width: 280px;
-    }
-
-    .testimonial-item img {
-      max-height: 180px;
-      object-fit: cover;
+    .project-image {
+      max-height: unset;
     }
   }
 </style>
-
-<!-- Scroll Script -->
-<script>
-  function scrollProjectsLeft() {
-    document.getElementById('projects-container').scrollBy({
-      left: -320,
-      behavior: 'smooth'
-    });
-  }
-
-  function scrollProjectsRight() {
-    document.getElementById('projects-container').scrollBy({
-      left: 320,
-      behavior: 'smooth'
-    });
-  }
-</script>
-
-<hr>
 
 <section id="project"  class="services section-bg">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
       <h2>Freelance Projects</h2>
-      <p>Projects done in Freelance</p>
+      <p>Projects Done in Freelance</p>
     </div>
 
     <div class="row gy-4">
@@ -556,214 +515,193 @@ currently studying in Marian College Kuttikkanam.
 <hr>
     <!-- ======= Testimonials Section ======= -->
    <!-- Lightbox CSS -->
+<!-- Lightbox CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<!-- Swiper CSS -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
 
+<!-- CERTIFICATIONS SECTION -->
 <section id="certi" class="testimonials section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
       <h2>Certifications</h2>
       <div class="section-title" style="text-align: left;">
-        <p>ACADEMICS</p>
+        <p><b>ACADEMICS</b></p>
       </div>
     </div>
 
-    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper certi-swiper">
       <div class="swiper-wrapper">
-
-        <!-- Certificate Card Template -->
-        <!-- Just change the image src and title inside each block -->
-
+        <!-- Certificate Slide -->
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/c6.jpg" data-lightbox="certi" data-title="Full Stack Developer Internship" style="display:block; position: relative;">
-              <img src="img/certi/c6.jpg" alt="Full Stack Developer Internship"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                           background: rgba(0,0,0,0.6); color: #fff; font-size: 24px;
-                           padding: 10px 15px; border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/c6.jpg" data-lightbox="certi" data-title="Full Stack Developer Internship">
+              <img src="img/certi/c6.jpg" alt="Full Stack Developer Internship">
             </a>
-            <h3>Full Stack Developer Internship</h3>
+            <h4>Full Stack Developer Internship</h4>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/c1.jpg" data-lightbox="certi" data-title="NPTEL Swayam" style="display:block; position: relative;">
-              <img src="img/certi/c1.jpg" alt="NPTEL Swayam"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                           background: rgba(0,0,0,0.6); color: #fff; font-size: 24px;
-                           padding: 10px 15px; border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/c1.jpg" data-lightbox="certi" data-title="NPTEL Swayam">
+              <img src="img/certi/c1.jpg" alt="NPTEL Swayam">
             </a>
-            <h3>NPTEL Swayam</h3>
+            <h4>NPTEL Swayam</h4>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/c2.png" data-lightbox="certi" data-title="RPA" style="display:block; position: relative;">
-              <img src="img/certi/c2.png" alt="RPA"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                           background: rgba(0,0,0,0.6); color: #fff; font-size: 24px;
-                           padding: 10px 15px; border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/c2.png" data-lightbox="certi" data-title="RPA">
+              <img src="img/certi/c2.png" alt="RPA">
             </a>
-            <h3>RPA</h3>
+            <h4>RPA</h4>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/c3.jpg" data-lightbox="certi" data-title="Linkedin" style="display:block; position: relative;">
-              <img src="img/certi/c3.jpg" alt="Linkedin"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                           background: rgba(0,0,0,0.6); color: #fff; font-size: 24px;
-                           padding: 10px 15px; border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/c3.jpg" data-lightbox="certi" data-title="LinkedIn">
+              <img src="img/certi/c3.jpg" alt="LinkedIn">
             </a>
-            <h3>Linkedin</h3>
+            <h4>LinkedIn</h4>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/c4.jpg" data-lightbox="certi" data-title="Linkedin" style="display:block; position: relative;">
-              <img src="img/certi/c4.jpg" alt="Linkedin"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                           background: rgba(0,0,0,0.6); color: #fff; font-size: 24px;
-                           padding: 10px 15px; border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/c4.jpg" data-lightbox="certi" data-title="LinkedIn">
+              <img src="img/certi/c4.jpg" alt="LinkedIn">
             </a>
-            <h3>Linkedin</h3>
+            <h4>LinkedIn</h4>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/c5.jpg" data-lightbox="certi" data-title="Shape AI" style="display:block; position: relative;">
-              <img src="img/certi/c5.jpg" alt="Shape AI"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                           background: rgba(0,0,0,0.6); color: #fff; font-size: 24px;
-                           padding: 10px 15px; border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/c5.jpg" data-lightbox="certi" data-title="Shape AI">
+              <img src="img/certi/c5.jpg" alt="Shape AI">
             </a>
-            <h3>Shape AI</h3>
+            <h4>Shape AI</h4>
           </div>
         </div>
-
       </div>
       <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
 
-<!-- Lightbox JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-<!-- Show + icon on hover -->
-<script>
-  document.querySelectorAll('.testimonial-item a').forEach(link => {
-    link.addEventListener('mouseenter', () => {
-      const plus = link.querySelector('span');
-      if (plus) plus.style.display = 'block';
-    });
-    link.addEventListener('mouseleave', () => {
-      const plus = link.querySelector('span');
-      if (plus) plus.style.display = 'none';
-    });
-  });
-</script>
-
-  <!-- Swiper Section: ACTIVITIES -->
+<!-- ACTIVITIES SECTION -->
 <section class="testimonials section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title" style="text-align: left;">
-      <p>ACTIVITIES</p>
+      <p></p><b>ACTIVITIES</b></p>
     </div>
-
-    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper activity-swiper">
       <div class="swiper-wrapper">
-
-        <!-- Repeat activity template -->
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/nsctc.jpg" data-lightbox="certi" data-title="NATIONAL STUDENTS CONFERENCE" style="display:block; position:relative;">
-              <img src="img/certi/nsctc.jpg" alt="NATIONAL STUDENTS CONFERENCE"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span class="zoom-icon" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                background: rgba(0,0,0,0.6); color: #fff; font-size: 24px; padding: 10px 15px;
-                border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/nsctc.jpg" data-lightbox="certi" data-title="NATIONAL STUDENTS CONFERENCE">
+              <img src="img/certi/nsctc.jpg" alt="NSC">
             </a>
-            <h3>NATIONAL STUDENTS CONFERENCE</h3>
+            <h4>NATIONAL STUDENTS CONFERENCE</h4>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/webdesign.png" data-lightbox="certi" data-title="TECH FEST" style="display:block; position:relative;">
-              <img src="img/certi/webdesign.png" alt="TECH FEST"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span class="zoom-icon" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                background: rgba(0,0,0,0.6); color: #fff; font-size: 24px; padding: 10px 15px;
-                border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/webdesign.png" data-lightbox="certi" data-title="TECH FEST">
+              <img src="img/certi/webdesign.png" alt="Tech Fest">
             </a>
-            <h3>TECH FEST</h3>
+            <h4>TECH FEST</h4>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/python.png" data-lightbox="certi" data-title="PYTHON WORKSHOP" style="display:block; position:relative;">
-              <img src="img/certi/python.png" alt="PYTHON WORKSHOP"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span class="zoom-icon" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                background: rgba(0,0,0,0.6); color: #fff; font-size: 24px; padding: 10px 15px;
-                border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/python.png" data-lightbox="certi" data-title="PYTHON WORKSHOP">
+              <img src="img/certi/python.png" alt="Python Workshop">
             </a>
-            <h3>PYTHON WORKSHOP</h3>
+            <h4>PYTHON WORKSHOP</h4>
           </div>
         </div>
 
         <div class="swiper-slide">
-          <div class="testimonial-item" style="position: relative;">
-            <a href="img/certi/pgcoding.png" data-lightbox="certi" data-title="PG CODING" style="display:block; position:relative;">
-              <img src="img/certi/pgcoding.png" alt="PG CODING"
-                   style="width: 100%; height: 200px; object-fit: contain;">
-              <span class="zoom-icon" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                background: rgba(0,0,0,0.6); color: #fff; font-size: 24px; padding: 10px 15px;
-                border-radius: 50%; display: none; z-index: 1;">+</span>
+          <div class="certi-card">
+            <a href="img/certi/pgcoding.png" data-lightbox="certi" data-title="PG CODING">
+              <img src="img/certi/pgcoding.png" alt="PG Coding">
             </a>
-            <h3>PG CODING</h3>
+            <h4>PG CODING</h4>
           </div>
         </div>
-
       </div>
       <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <!-- Lightbox JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-<!-- Show + icon on hover -->
+<!-- Initialize Swipers -->
 <script>
-  document.querySelectorAll('.testimonial-item a').forEach(link => {
-    link.addEventListener('mouseenter', () => {
-      const plus = link.querySelector('span');
-      if (plus) plus.style.display = 'block';
-    });
-    link.addEventListener('mouseleave', () => {
-      const plus = link.querySelector('span');
-      if (plus) plus.style.display = 'none';
-    });
+  new Swiper('.certi-swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 },
+    }
+  });
+
+  new Swiper('.activity-swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 },
+    }
   });
 </script>
-    <hr>
 
-    
-    
-
+<!-- Custom CSS -->
+<style>
+  .certi-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  .certi-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+  .certi-card h4 {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .swiper {
+    padding-bottom: 30px;
+  }
+</style>
+<hr>
  <section id="vol" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
         
